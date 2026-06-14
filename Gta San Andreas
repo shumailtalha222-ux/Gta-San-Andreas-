@@ -1,0 +1,26 @@
+from pathlib import Path
+
+html = """<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GTA San Andreas Mod</title>
+<style>
+body{font-family:Arial,sans-serif;background:#111;color:white;text-align:center;padding:40px}
+h1{color:#00ff66}
+.box{max-width:700px;margin:auto;background:#222;padding:20px;border-radius:12px}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>GTA San Andreas</h1>
+<h2>Mod Version</h2>
+<p>All CLEO Menu, Pakistani Cars, and More!</p>
+<p>Contact: 03133038484</p>
+<p>Click here to contact for details.</p>
+</div>
+</body>
+</html>"""
+path = "/mnt/data/GTA_SA_Mod_Page.html"
+Path(path).write_text(html, encoding="utf-8")
+print(path)
